@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-HOST = "panorama.internal.slmbank.net"
+HOST = "host"
 KEY_ENV_VAR = "PANO_KEY"
 
 
