@@ -1,0 +1,8 @@
+# Lock
+curl -sk "https://panorama/api/?type=op&cmd=<request><commit-lock><add></add></commit-lock></request>&key=$KEY"
+
+# Unlock
+curl -sk "https://panorama/api/?type=op&cmd=<request><commit-lock><remove></remove></commit-lock></request>&key=$KEY"
+
+# Status
+curl -sk "https://panorama/api/?type=op&cmd=<show><commit-lock></commit-lock></show>&key=$KEY"
