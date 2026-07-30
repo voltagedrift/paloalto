@@ -1,5 +1,8 @@
 import requests
-import xml.etree.ElementTree as ET
+import xml.etree.ElementTree as ET # to see neat output without XML
+import urllib3
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning) # to disable cert warnings
 
 HOST = "host"
 KEY = "your_api_key"
@@ -45,3 +48,7 @@ if __name__ == "__main__":
     action = sys.argv[1]
     xml_text = call(action)
     parse(xml_text, action)
+import requests
+import urllib3
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
